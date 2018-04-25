@@ -3,25 +3,28 @@
   <head>
     <title>Rock Paper Scissors</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   </head>
   <body>
-    <div class = "container">
+    <header>
       <h1>Rock Paper Scissors Game</h1>
+    </header>
+    <div class = "container">
       <form action='/' method = 'post'>
         <div class="row">
           <div class="col-md-6">
             <h3>Player 1</h3>
-            <label class="control-label" for="player1">Choose your wepon</label>
-            <select class="form-control short" name="player1">
+            <label class="control-label" for="player1">Choose your weapon</label>
+            <select class="form-control short width" name="player1">
               <option value="1">Paper</option>
               <option value="2">Scissors</option>
               <option value="3">Rock</option>
             </select>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 text-right">
             <h3>Player 2</h3>
-            <label class="control-label" for="player2">Choose your wepon</label>
-            <select class="form-control short" name="player2">
+            <label class="control-label" for="player2">Choose your weapon</label>
+            <select class="form-control short width player2" name="player2">
               <option value="1">Paper</option>
               <option value="2">Scissors</option>
               <option value="3">Rock</option>
@@ -41,6 +44,13 @@
         <hr>
         <h2>@Model wins!</h2>
       }
+      <footer>
+       <ul>
+         <li>Posted by: Eva Antipina</li>
+         <li>Contact information: <a href="mailto:example@gmail.com">
+        example@gmail.com</a>.</li>
+       </ul>
+     </footer>
     </div>
   </body>
 </html>

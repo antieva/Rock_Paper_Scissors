@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+  font-family: "Comic Sans MS", Charcoal, sans-serif;
+  color: #e2dad7;
+  font-weight: bold;
+  font-size: 40pt;
+}
+
+header {
+  padding: 200px;
+  background-color: #c93f30;
+}
+
+form {
+  margin-top: 10%;
+}
+
+button {
+  margin: 5% 46% 0;
+  width: 100px;
+}
+
+.width {
+  width: 200px;
+}
+
+.player2 {
+  margin-left: 65%;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  font-size: 1.1em;
+  margin-top: 30%;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 5px;
+}
+ footer li {
+   display: inline;
+   margin: 0 80px;
+   color: #938d8f;
+ }
