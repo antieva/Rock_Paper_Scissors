@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <div class = "container">
+      <h1>Rock Paper Scissors Game</h1>
+      <form action='/' method = 'post'>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Player 1</h3>
+            <label class="control-label" for="player1">Choose your wepon</label>
+            <select class="form-control short" name="player1">
+              <option value="1">Paper</option>
+              <option value="2">Scissors</option>
+              <option value="3">Rock</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <h3>Player 2</h3>
+            <label class="control-label" for="player2">Choose your wepon</label>
+            <select class="form-control short" name="player2">
+              <option value="1">Paper</option>
+              <option value="2">Scissors</option>
+              <option value="3">Rock</option>
+            </select>
+          </div>
+        </div>
+        <button type='submit' class='btn btn-primary'>Go!</button>
+      </form>
+      <br>
+
+      @if (Model == null) {
+        <hr>
+      } else if (Model == "Draw") {
+        <hr>
+        <h2>@Model!</h2>
+      } else {
+        <hr>
+        <h2>@Model wins!</h2>
+      }
+    </div>
+  </body>
+</html>
